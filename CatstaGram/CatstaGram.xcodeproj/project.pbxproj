@@ -16,6 +16,7 @@
 		F252786F2C8989E100685866 /* CatstaGramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252786E2C8989E100685866 /* CatstaGramUITests.swift */; };
 		F25278712C8989E100685866 /* CatstaGramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25278702C8989E100685866 /* CatstaGramUITestsLaunchTests.swift */; };
 		F252787E2C89ACB000685866 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252787D2C89ACB000685866 /* LoginViewController.swift */; };
+		F261394A2C8AE24D003917DC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26139492C8AE24D003917DC /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F252786E2C8989E100685866 /* CatstaGramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatstaGramUITests.swift; sourceTree = "<group>"; };
 		F25278702C8989E100685866 /* CatstaGramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatstaGramUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F252787D2C89ACB000685866 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F26139492C8AE24D003917DC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F252784F2C8989E000685866 /* SceneDelegate.swift */,
 				F25278532C8989E000685866 /* Main.storyboard */,
 				F252787D2C89ACB000685866 /* LoginViewController.swift */,
+				F26139492C8AE24D003917DC /* RegisterViewController.swift */,
 				F25278562C8989E100685866 /* Assets.xcassets */,
 				F25278582C8989E100685866 /* LaunchScreen.storyboard */,
 				F252785B2C8989E100685866 /* Info.plist */,
@@ -261,6 +264,7 @@
 				F252787E2C89ACB000685866 /* LoginViewController.swift in Sources */,
 				F252784E2C8989E000685866 /* AppDelegate.swift in Sources */,
 				F25278502C8989E000685866 /* SceneDelegate.swift in Sources */,
+				F261394A2C8AE24D003917DC /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
