@@ -9,6 +9,19 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     //MARK: - Properties
+    var email: String = ""
+    var name: String = ""
+    var nickname: String = ""
+    var password: String = ""
+    
+    // closure를 통해서 전달
+//    var passEmail: ((email) -> Void)?
+//    var passName: ((name) -> Void)?
+//    var passNickname: ((nickname) -> Void)?
+//    var passPassword: ((password) -> Void)? ==>  비효율적이므로 구조체를 만들어서 전달
+    
+    var userInfo: ((UserInfo) -> Void)?
+    
     // 유효성검사를 위한 프로퍼티
     var isValidEmail = false{
         didSet{ // 프로퍼티 옵저버
@@ -36,6 +49,7 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var signupButton: UIButton!
     
+    @IBOutlet weak var popToLoginButton: UIButton!
     //Textfields
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -53,6 +67,12 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTextField()
+        setupAttribute()
+        
+        // bug fix
+        // 스와이프해서 뒤로 가기
+        self.navigationController?
+            .interactivePopGestureRecognizer?.delegate = nil
     }
     
     
@@ -62,13 +82,41 @@ class RegisterViewController: UIViewController {
         let text = sender.text ?? ""
         
         switch sender {
-        case emailTextField: self.isValidEmail = text.isValidEmail()
-        case nameTextField: self.isValidName = text.count > 2
-        case nicknameTextField: self.isValidNickName = text.count > 2
-        case passwordTextField: self.isValidPassword = text.isValidPassword()
+        case emailTextField: 
+            self.isValidEmail = text.isValidEmail()
+            self.email = text
+            
+        case nameTextField:
+            self.isValidName = text.count > 2
+            self.name = text
+            
+        case nicknameTextField:
+            self.isValidNickName = text.count > 2
+            self.nickname = text
+            
+        case passwordTextField:
+            self.isValidPassword = text.isValidPassword()
+            self.password = text
         default:
             fatalError("Missing TextField...")
         }
+    }
+    
+    @IBAction func backButtonDidTap(_ sender: Any) {
+        // 뒤로가기
+        self.navigationController?
+            .popViewController(animated: true)
+    }
+    
+    @IBAction func registerButtonDidtap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+        let userInfo = UserInfo(
+            email: self.email,
+            name: self.name,
+            nickname: self.nickname,
+            password: self.password)
+        
+        self.userInfo?(userInfo)
     }
     
     
@@ -100,6 +148,28 @@ class RegisterViewController: UIViewController {
                 self.signupButton.backgroundColor = UIColor.disabledButton
             }
         }
+    }
+    
+    private func setupAttribute(){
+        // registerButton
+        let text1 = "계정이 있으신가요?"
+        let text2 = "로그인"
+        
+        let font1 = UIFont.systemFont(ofSize: 13)
+        let font2 = UIFont.boldSystemFont(ofSize: 13)
+        
+        let color1 = UIColor.darkGray
+        let color2 = UIColor.facebook
+        
+        let attributes = generateButtonAttribute(
+            self.popToLoginButton,
+            texts: text1, text2,
+            fonts: font1, font2,
+            colors: color1, color2)
+        
+        self
+            .popToLoginButton
+            .setAttributedTitle(attributes, for: .normal)
     }
 }
 
