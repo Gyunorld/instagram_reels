@@ -13,3 +13,7 @@
 - Delegate와 Protocol 실습
 - 홈화면 구성 (피드 / 스토리)
 - 이론 정리 : https://polite-colossus-194.notion.site/TableView-CollectionView-0d0a421e1fc34c31a65c8cb0c36f6870
+
+### 0910
+- 마이페이지 프로필 구현
+- 마이페이지 피드 구현
