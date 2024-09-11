@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5100813215E80C9465F18E /* Pods_CatstaGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B7E72D3E90455D71D3843F7 /* Pods_CatstaGram.framework */; };
 		F21C19BF2C8FDB3A0023B44E /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C19BD2C8FDB3A0023B44E /* ProfileCollectionViewCell.swift */; };
 		F21C19C02C8FDB3A0023B44E /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21C19BE2C8FDB3A0023B44E /* ProfileCollectionViewCell.xib */; };
 		F21C19C52C8FE72C0023B44E /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21C19C32C8FE72C0023B44E /* PostCollectionViewCell.swift */; };
@@ -20,6 +21,12 @@
 		F252786F2C8989E100685866 /* CatstaGramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252786E2C8989E100685866 /* CatstaGramUITests.swift */; };
 		F25278712C8989E100685866 /* CatstaGramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25278702C8989E100685866 /* CatstaGramUITestsLaunchTests.swift */; };
 		F252787E2C89ACB000685866 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252787D2C89ACB000685866 /* LoginViewController.swift */; };
+		F25DCB362C9174790036B854 /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCB352C9174790036B854 /* FeedUploadInput.swift */; };
+		F25DCB3A2C9175040036B854 /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCB392C9175040036B854 /* FeedUploadModel.swift */; };
+		F25DCB3C2C9175B20036B854 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCB3B2C9175B20036B854 /* FeedUploadDataManager.swift */; };
+		F25DCB422C917E250036B854 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCB412C917E250036B854 /* UserFeedModel.swift */; };
+		F25DCB442C9186B30036B854 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCB432C9186B30036B854 /* UserFeedDataManager.swift */; };
+		F25DCB482C919DD10036B854 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DCB472C919DD10036B854 /* DeleteUserFeed.swift */; };
 		F261394A2C8AE24D003917DC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26139492C8AE24D003917DC /* RegisterViewController.swift */; };
 		F2868B1D2C8ED73300D785A2 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2868B1B2C8ED73300D785A2 /* StoryTableViewCell.swift */; };
 		F2868B1E2C8ED73300D785A2 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2868B1C2C8ED73300D785A2 /* StoryTableViewCell.xib */; };
@@ -32,6 +39,9 @@
 		F2902E272C8EC79B00A90440 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2902E262C8EC79B00A90440 /* HomeViewController.swift */; };
 		F2902E312C8ECB2700A90440 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2902E302C8ECB2700A90440 /* FeedTableViewCell.xib */; };
 		F2902E322C8ECB2700A90440 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2902E2F2C8ECB2700A90440 /* FeedTableViewCell.swift */; };
+		F2A1C54E2C9153CC0006C7F5 /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1C54D2C9153CC0006C7F5 /* FeedAPIInput.swift */; };
+		F2A1C5502C91545C0006C7F5 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1C54F2C91545C0006C7F5 /* FeedModel.swift */; };
+		F2A1C5522C9155350006C7F5 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1C5512C9155350006C7F5 /* FeedDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +62,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B7E72D3E90455D71D3843F7 /* Pods_CatstaGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatstaGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3F8A2CF2138145091B5323 /* Pods-CatstaGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatstaGram.debug.xcconfig"; path = "Target Support Files/Pods-CatstaGram/Pods-CatstaGram.debug.xcconfig"; sourceTree = "<group>"; };
+		9A67C7576C1B24CBB897364E /* Pods-CatstaGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatstaGram.release.xcconfig"; path = "Target Support Files/Pods-CatstaGram/Pods-CatstaGram.release.xcconfig"; sourceTree = "<group>"; };
 		F21C19BD2C8FDB3A0023B44E /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		F21C19BE2C8FDB3A0023B44E /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		F21C19C32C8FE72C0023B44E /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -69,6 +82,12 @@
 		F252786E2C8989E100685866 /* CatstaGramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatstaGramUITests.swift; sourceTree = "<group>"; };
 		F25278702C8989E100685866 /* CatstaGramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatstaGramUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F252787D2C89ACB000685866 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F25DCB352C9174790036B854 /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		F25DCB392C9175040036B854 /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
+		F25DCB3B2C9175B20036B854 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
+		F25DCB412C917E250036B854 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		F25DCB432C9186B30036B854 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
+		F25DCB472C919DD10036B854 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
 		F26139492C8AE24D003917DC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F2868B1B2C8ED73300D785A2 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
 		F2868B1C2C8ED73300D785A2 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -81,6 +100,11 @@
 		F2902E262C8EC79B00A90440 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F2902E2F2C8ECB2700A90440 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		F2902E302C8ECB2700A90440 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		F298D5F62C91611D00A6F18E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F298D5F72C91611D00A6F18E /* Alamofire.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = Alamofire.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A1C54D2C9153CC0006C7F5 /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
+		F2A1C54F2C91545C0006C7F5 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		F2A1C5512C9155350006C7F5 /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5100813215E80C9465F18E /* Pods_CatstaGram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +133,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F140C407A38A80AD873822B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F298D5F62C91611D00A6F18E /* Alamofire.framework */,
+				F298D5F72C91611D00A6F18E /* Alamofire.bundle */,
+				0B7E72D3E90455D71D3843F7 /* Pods_CatstaGram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		373DB5337B76D46592AFFBDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F3F8A2CF2138145091B5323 /* Pods-CatstaGram.debug.xcconfig */,
+				9A67C7576C1B24CBB897364E /* Pods-CatstaGram.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F21C19BC2C8FDB0B0023B44E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +186,8 @@
 				F25278632C8989E100685866 /* CatstaGramTests */,
 				F252786D2C8989E100685866 /* CatstaGramUITests */,
 				F252784B2C8989E000685866 /* Products */,
+				373DB5337B76D46592AFFBDE /* Pods */,
+				0F140C407A38A80AD873822B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,13 +204,9 @@
 		F252784C2C8989E000685866 /* CatstaGram */ = {
 			isa = PBXGroup;
 			children = (
-				F2868B232C8FD8AD00D785A2 /* Profile */,
-				F2902E252C8EC78C00A90440 /* Home */,
-				F252784D2C8989E000685866 /* AppDelegate.swift */,
-				F252784F2C8989E000685866 /* SceneDelegate.swift */,
+				F25DCB3D2C917A670036B854 /* App */,
+				F25DCB3F2C917AAE0036B854 /* UserInterface */,
 				F25278532C8989E000685866 /* Main.storyboard */,
-				F252787D2C89ACB000685866 /* LoginViewController.swift */,
-				F26139492C8AE24D003917DC /* RegisterViewController.swift */,
 				F2902DE32C8EAE2300A90440 /* UserInfo.swift */,
 				F25278562C8989E100685866 /* Assets.xcassets */,
 				F25278582C8989E100685866 /* LaunchScreen.storyboard */,
@@ -192,9 +234,74 @@
 			path = CatstaGramUITests;
 			sourceTree = "<group>";
 		};
+		F25DCB342C9174580036B854 /* FeedUploadDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F25DCB352C9174790036B854 /* FeedUploadInput.swift */,
+				F25DCB392C9175040036B854 /* FeedUploadModel.swift */,
+				F25DCB3B2C9175B20036B854 /* FeedUploadDataManager.swift */,
+			);
+			path = FeedUploadDataManager;
+			sourceTree = "<group>";
+		};
+		F25DCB3D2C917A670036B854 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F252784D2C8989E000685866 /* AppDelegate.swift */,
+				F252784F2C8989E000685866 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F25DCB3E2C917A920036B854 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F252787D2C89ACB000685866 /* LoginViewController.swift */,
+				F26139492C8AE24D003917DC /* RegisterViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F25DCB3F2C917AAE0036B854 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				F25DCB3E2C917A920036B854 /* Authentication */,
+				F2868B232C8FD8AD00D785A2 /* Profile */,
+				F2902E252C8EC78C00A90440 /* Home */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		F25DCB402C917E090036B854 /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F25DCB432C9186B30036B854 /* UserFeedDataManager.swift */,
+				F25DCB462C919DB00036B854 /* DeleteUserFeed */,
+				F25DCB452C919D9B0036B854 /* UserFeed */,
+			);
+			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
+		F25DCB452C919D9B0036B854 /* UserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				F25DCB412C917E250036B854 /* UserFeedModel.swift */,
+			);
+			path = UserFeed;
+			sourceTree = "<group>";
+		};
+		F25DCB462C919DB00036B854 /* DeleteUserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				F25DCB472C919DD10036B854 /* DeleteUserFeed.swift */,
+			);
+			path = DeleteUserFeed;
+			sourceTree = "<group>";
+		};
 		F2868B232C8FD8AD00D785A2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F25DCB402C917E090036B854 /* UserFeedDataManager */,
 				F21C19BC2C8FDB0B0023B44E /* Cell */,
 				F2868B242C8FD8CE00D785A2 /* ProfileViewController.swift */,
 			);
@@ -204,6 +311,8 @@
 		F2902E252C8EC78C00A90440 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F25DCB342C9174580036B854 /* FeedUploadDataManager */,
+				F2A1C54C2C9153A50006C7F5 /* FeedDataManager */,
 				F2902E282C8ECA3100A90440 /* Cell */,
 				F2902E262C8EC79B00A90440 /* HomeViewController.swift */,
 			);
@@ -223,6 +332,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		F2A1C54C2C9153A50006C7F5 /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				F2A1C54D2C9153CC0006C7F5 /* FeedAPIInput.swift */,
+				F2A1C54F2C91545C0006C7F5 /* FeedModel.swift */,
+				F2A1C5512C9155350006C7F5 /* FeedDataManager.swift */,
+			);
+			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,9 +349,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F25278742C8989E100685866 /* Build configuration list for PBXNativeTarget "CatstaGram" */;
 			buildPhases = (
+				F76E189C0B2E8AAE7B1A3F15 /* [CP] Check Pods Manifest.lock */,
 				F25278462C8989E000685866 /* Sources */,
 				F25278472C8989E000685866 /* Frameworks */,
 				F25278482C8989E000685866 /* Resources */,
+				446E1512B6706CA528C5A0F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,6 +475,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		446E1512B6706CA528C5A0F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatstaGram/Pods-CatstaGram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatstaGram/Pods-CatstaGram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatstaGram/Pods-CatstaGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F76E189C0B2E8AAE7B1A3F15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatstaGram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F25278462C8989E000685866 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -361,18 +524,27 @@
 			files = (
 				F2902DE22C8E9A5E00A90440 /* UIViewController+Extension.swift in Sources */,
 				F252787E2C89ACB000685866 /* LoginViewController.swift in Sources */,
+				F2A1C54E2C9153CC0006C7F5 /* FeedAPIInput.swift in Sources */,
 				F2868B212C8EDA8F00D785A2 /* StoryCollectionViewCell.swift in Sources */,
+				F25DCB482C919DD10036B854 /* DeleteUserFeed.swift in Sources */,
 				F252784E2C8989E000685866 /* AppDelegate.swift in Sources */,
+				F25DCB362C9174790036B854 /* FeedUploadInput.swift in Sources */,
 				F2902E272C8EC79B00A90440 /* HomeViewController.swift in Sources */,
 				F25278502C8989E000685866 /* SceneDelegate.swift in Sources */,
+				F25DCB442C9186B30036B854 /* UserFeedDataManager.swift in Sources */,
 				F2868B252C8FD8CE00D785A2 /* ProfileViewController.swift in Sources */,
 				F2902DE02C8E98EA00A90440 /* UIView+Extension.swift in Sources */,
 				F21C19BF2C8FDB3A0023B44E /* ProfileCollectionViewCell.swift in Sources */,
+				F25DCB3A2C9175040036B854 /* FeedUploadModel.swift in Sources */,
+				F25DCB3C2C9175B20036B854 /* FeedUploadDataManager.swift in Sources */,
 				F2902DE42C8EAE2300A90440 /* UserInfo.swift in Sources */,
+				F2A1C5522C9155350006C7F5 /* FeedDataManager.swift in Sources */,
 				F2902E322C8ECB2700A90440 /* FeedTableViewCell.swift in Sources */,
 				F261394A2C8AE24D003917DC /* RegisterViewController.swift in Sources */,
 				F21C19C52C8FE72C0023B44E /* PostCollectionViewCell.swift in Sources */,
+				F25DCB422C917E250036B854 /* UserFeedModel.swift in Sources */,
 				F2868B1D2C8ED73300D785A2 /* StoryTableViewCell.swift in Sources */,
+				F2A1C5502C91545C0006C7F5 /* FeedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,12 +721,14 @@
 		};
 		F25278752C8989E100685866 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3F8A2CF2138145091B5323 /* Pods-CatstaGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FMHAT7KHA7;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatstaGram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -577,12 +751,14 @@
 		};
 		F25278762C8989E100685866 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A67C7576C1B24CBB897364E /* Pods-CatstaGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FMHAT7KHA7;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CatstaGram/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
