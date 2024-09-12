@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="71n-XD-4Vx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ip1-eo-vLD">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -20,7 +20,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RLs-5v-ay8">
                                 <rect key="frame" x="10" y="409" width="373" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
                                     <action selector="passwordTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="L6B-FR-B5b"/>
                                 </connections>
@@ -483,6 +483,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="anK-JB-1xf" kind="relationship" relationship="viewControllers" id="YpZ-Ay-hyg"/>
+                        <segue destination="U94-gI-ucG" kind="relationship" relationship="viewControllers" id="irN-Gy-Fm3"/>
                         <segue destination="aco-vD-0rp" kind="relationship" relationship="viewControllers" id="2o9-bN-Ln4"/>
                     </connections>
                 </tabBarController>
@@ -507,6 +508,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzJ-QX-gKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="346" y="5"/>
+        </scene>
+        <!--Reels-->
+        <scene sceneID="8Ce-1E-bWL">
+            <objects>
+                <viewController storyboardIdentifier="ReelsVC" id="U94-gI-ucG" customClass="ReelsViewController" customModule="CatstaGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fix-YW-KOo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JQP-fm-kWc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wyd-np-FWo">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Vx-SP-k9P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Vx-SP-k9P" firstAttribute="bottom" secondItem="JQP-fm-kWc" secondAttribute="bottom" id="6k9-Hd-kKq"/>
+                            <constraint firstItem="JQP-fm-kWc" firstAttribute="leading" secondItem="6Vx-SP-k9P" secondAttribute="leading" id="EUF-Qr-bex"/>
+                            <constraint firstItem="6Vx-SP-k9P" firstAttribute="trailing" secondItem="JQP-fm-kWc" secondAttribute="trailing" id="qDp-J9-mZN"/>
+                            <constraint firstItem="JQP-fm-kWc" firstAttribute="top" secondItem="6Vx-SP-k9P" secondAttribute="top" id="twA-Je-ufk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reels" id="k2g-Ow-IYQ"/>
+                    <connections>
+                        <outlet property="collcetionView" destination="JQP-fm-kWc" id="TQC-8D-b6c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j44-1f-xQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="1432"/>
         </scene>
         <!--Profile-->
         <scene sceneID="qyX-dD-lro">
@@ -552,7 +591,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

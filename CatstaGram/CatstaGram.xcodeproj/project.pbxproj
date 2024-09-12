@@ -42,6 +42,13 @@
 		F2A1C54E2C9153CC0006C7F5 /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1C54D2C9153CC0006C7F5 /* FeedAPIInput.swift */; };
 		F2A1C5502C91545C0006C7F5 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1C54F2C91545C0006C7F5 /* FeedModel.swift */; };
 		F2A1C5522C9155350006C7F5 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1C5512C9155350006C7F5 /* FeedDataManager.swift */; };
+		F2A96CFC2C92AB8800266F63 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A96CFB2C92AB8800266F63 /* ReelsViewController.swift */; };
+		F2A96CFF2C92AC7C00266F63 /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A96CFD2C92AC7C00266F63 /* ReelsCollectionViewCell.swift */; };
+		F2A96D002C92AC7C00266F63 /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A96CFE2C92AC7C00266F63 /* ReelsCollectionViewCell.xib */; };
+		F2A96D032C92B0D200266F63 /* shortsVideo.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = F2A96D012C92B0D200266F63 /* shortsVideo.MP4 */; };
+		F2A96D042C92B0D200266F63 /* reelsVideo.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = F2A96D022C92B0D200266F63 /* reelsVideo.MP4 */; };
+		F2A96D062C92C07200266F63 /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A96D052C92C07200266F63 /* ReelsCell.swift */; };
+		F2A96D082C92C44E00266F63 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A96D072C92C44E00266F63 /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +112,13 @@
 		F2A1C54D2C9153CC0006C7F5 /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
 		F2A1C54F2C91545C0006C7F5 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 		F2A1C5512C9155350006C7F5 /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
+		F2A96CFB2C92AB8800266F63 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		F2A96CFD2C92AC7C00266F63 /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
+		F2A96CFE2C92AC7C00266F63 /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
+		F2A96D012C92B0D200266F63 /* shortsVideo.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = shortsVideo.MP4; path = ../../../../../../Downloads/shortsVideo.MP4; sourceTree = "<group>"; };
+		F2A96D022C92B0D200266F63 /* reelsVideo.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = reelsVideo.MP4; path = ../../../../../../Downloads/reelsVideo.MP4; sourceTree = "<group>"; };
+		F2A96D052C92C07200266F63 /* ReelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCell.swift; sourceTree = "<group>"; };
+		F2A96D072C92C44E00266F63 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,13 +218,20 @@
 		F252784C2C8989E000685866 /* CatstaGram */ = {
 			isa = PBXGroup;
 			children = (
+				F2A96D022C92B0D200266F63 /* reelsVideo.MP4 */,
+				F2A96D012C92B0D200266F63 /* shortsVideo.MP4 */,
 				F25DCB3D2C917A670036B854 /* App */,
 				F25DCB3F2C917AAE0036B854 /* UserInterface */,
 				F25278532C8989E000685866 /* Main.storyboard */,
+				F2A96CFB2C92AB8800266F63 /* ReelsViewController.swift */,
+				F2A96CFD2C92AC7C00266F63 /* ReelsCollectionViewCell.swift */,
+				F2A96CFE2C92AC7C00266F63 /* ReelsCollectionViewCell.xib */,
 				F2902DE32C8EAE2300A90440 /* UserInfo.swift */,
 				F25278562C8989E100685866 /* Assets.xcassets */,
 				F25278582C8989E100685866 /* LaunchScreen.storyboard */,
 				F252785B2C8989E100685866 /* Info.plist */,
+				F2A96D052C92C07200266F63 /* ReelsCell.swift */,
+				F2A96D072C92C44E00266F63 /* VideoPlayerView.swift */,
 				F2902DDF2C8E98EA00A90440 /* UIView+Extension.swift */,
 				F2902DE12C8E9A5E00A90440 /* UIViewController+Extension.swift */,
 			);
@@ -448,6 +469,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A96D032C92B0D200266F63 /* shortsVideo.MP4 in Resources */,
+				F2A96D042C92B0D200266F63 /* reelsVideo.MP4 in Resources */,
 				F21C19C62C8FE72C0023B44E /* PostCollectionViewCell.xib in Resources */,
 				F25278572C8989E100685866 /* Assets.xcassets in Resources */,
 				F2902E312C8ECB2700A90440 /* FeedTableViewCell.xib in Resources */,
@@ -455,6 +478,7 @@
 				F21C19C02C8FDB3A0023B44E /* ProfileCollectionViewCell.xib in Resources */,
 				F2868B1E2C8ED73300D785A2 /* StoryTableViewCell.xib in Resources */,
 				F2868B222C8EDA8F00D785A2 /* StoryCollectionViewCell.xib in Resources */,
+				F2A96D002C92AC7C00266F63 /* ReelsCollectionViewCell.xib in Resources */,
 				F25278552C8989E000685866 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,15 +559,19 @@
 				F2868B252C8FD8CE00D785A2 /* ProfileViewController.swift in Sources */,
 				F2902DE02C8E98EA00A90440 /* UIView+Extension.swift in Sources */,
 				F21C19BF2C8FDB3A0023B44E /* ProfileCollectionViewCell.swift in Sources */,
+				F2A96D062C92C07200266F63 /* ReelsCell.swift in Sources */,
 				F25DCB3A2C9175040036B854 /* FeedUploadModel.swift in Sources */,
 				F25DCB3C2C9175B20036B854 /* FeedUploadDataManager.swift in Sources */,
 				F2902DE42C8EAE2300A90440 /* UserInfo.swift in Sources */,
 				F2A1C5522C9155350006C7F5 /* FeedDataManager.swift in Sources */,
 				F2902E322C8ECB2700A90440 /* FeedTableViewCell.swift in Sources */,
 				F261394A2C8AE24D003917DC /* RegisterViewController.swift in Sources */,
+				F2A96CFF2C92AC7C00266F63 /* ReelsCollectionViewCell.swift in Sources */,
 				F21C19C52C8FE72C0023B44E /* PostCollectionViewCell.swift in Sources */,
 				F25DCB422C917E250036B854 /* UserFeedModel.swift in Sources */,
+				F2A96D082C92C44E00266F63 /* VideoPlayerView.swift in Sources */,
 				F2868B1D2C8ED73300D785A2 /* StoryTableViewCell.swift in Sources */,
+				F2A96CFC2C92AB8800266F63 /* ReelsViewController.swift in Sources */,
 				F2A1C5502C91545C0006C7F5 /* FeedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -61,8 +61,10 @@ class LoginViewController: UIViewController {
             // Enabled 체크여부 확인 --> 체크해제시 동작안함
             let vc = storyboard?
                 .instantiateViewController(withIdentifier: "TabBarVC") as!UITabBarController
-            vc.modalPresentationStyle = .fullScreen // fullScreen으로 화면 전환
-            self.present(vc, animated: true, completion: nil)
+//            vc.modalPresentationStyle = .fullScreen // fullScreen으로 화면 전환
+//            self.present(vc, animated: true, completion: nil) ==> 로그인 화면이 남아있음
+            // 로그인 화면이 남아있지 않음 --> 메모리 사용량 감소
+            self.view.window?.windowScene?.keyWindow?.rootViewController = vc
         } else {
             
         }
